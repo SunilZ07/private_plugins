@@ -1,4 +1,4 @@
-export class SideMenu{
+export class BuyerMenu{
     
 	//#region Unsed/Mis
 	settingOption: MenuItem[] = [
@@ -79,7 +79,6 @@ export class SideMenu{
         let slideMenu: MenuItem[] = [];
         slideMenu = [...this.loggedInOptions, ...this.commonOptions, ...(true ? this.eventCommonOptions : this.enterpriseCommonOptions)]
         slideMenu = [...slideMenu, ...this.commonBuyerOptions]; // Buyer options
-       
     }
 }
 export interface MenuItem {

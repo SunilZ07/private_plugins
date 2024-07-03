@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SideMenu = void 0;
-class SideMenu {
+exports.BuyerMenu = void 0;
+class BuyerMenu {
     constructor() {
         //#region Unsed/Mis
         this.settingOption = [
@@ -74,4 +74,4 @@ class SideMenu {
         slideMenu = [...slideMenu, ...this.commonBuyerOptions]; // Buyer options
     }
 }
-exports.SideMenu = SideMenu;
+exports.BuyerMenu = BuyerMenu;
