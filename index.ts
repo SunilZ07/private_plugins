@@ -77,7 +77,7 @@ export class BuyerMenu{
 	//#endregion
         let slideMenu: MenuItem[] = [];
         slideMenu = [...loggedInOptions, ...commonOptions, ...(true ? eventCommonOptions : enterpriseCommonOptions)]
-        slideMenu = [...slideMenu, ...commonBuyerOptions]; // Buyer options
+        slideMenu = [...slideMenu, ...commonBuyerOptions,...eventSellerOptions]; // Buyer options
 		return slideMenu;
     }
 }
