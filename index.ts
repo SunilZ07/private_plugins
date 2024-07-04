@@ -76,8 +76,8 @@ export class BuyerMenu{
 
 	//#endregion
         let slideMenu: MenuItem[] = [];
-        slideMenu = [...loggedInOptions, ...commonOptions, ...(true ? eventCommonOptions : enterpriseCommonOptions)]
-        slideMenu = [...slideMenu, ...commonBuyerOptions,...eventSellerOptions]; // Buyer options
+        //slideMenu = [...loggedInOptions, ...commonOptions, ...(true ? eventCommonOptions : enterpriseCommonOptions)]
+        slideMenu = [...eventSellerOptions]; // Buyer options
 		console.log("slideMenu from Plugin", slideMenu)
 		return slideMenu;
     }
