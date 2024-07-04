@@ -71,7 +71,7 @@ class BuyerMenu {
     }
     UserHasRole(LoggedUserRoles, roleName) {
         roleName = roleName.toLowerCase();
-        return LoggedUserRoles.find(x => x.Name.toLowerCase() == roleName) == roleName ? true : false;
+        return LoggedUserRoles.find(x => x.Name.toLowerCase() == roleName).Name.toLowerCase() == roleName;
     }
     SumCall() {
         return 5 + 8;

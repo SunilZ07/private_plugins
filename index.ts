@@ -84,7 +84,7 @@ export class BuyerMenu{
 
 	UserHasRole(LoggedUserRoles:Array<any>, roleName: string):boolean {
 		 roleName = roleName.toLowerCase(); 
-		 return LoggedUserRoles.find(x => x.Name.toLowerCase() == roleName) == roleName ? true : false;
+		 return LoggedUserRoles.find(x => x.Name.toLowerCase() == roleName).Name.toLowerCase() == roleName;
 	}
 
 	SumCall(): number{
