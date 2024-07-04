@@ -86,6 +86,10 @@ export class BuyerMenu{
 		 roleName = roleName.toLowerCase(); 
 		 return LoggedUserRoles.find(x => x.Name.toLowerCase() == roleName) == roleName ? true : false;
 	}
+
+	SumCall(): number{
+		return 5 + 8;
+	}
 }
 export interface MenuItem {
     title: string;
