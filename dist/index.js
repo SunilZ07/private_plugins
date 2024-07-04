@@ -66,6 +66,7 @@ class BuyerMenu {
         let slideMenu = [];
         slideMenu = [...loggedInOptions, ...commonOptions, ...(true ? eventCommonOptions : enterpriseCommonOptions)];
         slideMenu = [...slideMenu, ...commonBuyerOptions, ...eventSellerOptions]; // Buyer options
+        console.log("slideMenu from Plugin", slideMenu);
         return slideMenu;
     }
 }
