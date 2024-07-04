@@ -81,6 +81,11 @@ export class BuyerMenu{
 		console.log("slideMenu from Plugin", slideMenu)
 		return slideMenu;
     }
+
+	UserHasRole(LoggedUserRoles:Array<any>, roleName: string):boolean {
+		 roleName = roleName.toLowerCase(); 
+		 return LoggedUserRoles.find(x => x.Name.toLowerCase() == roleName) == roleName ? true : false;
+	}
 }
 export interface MenuItem {
     title: string;

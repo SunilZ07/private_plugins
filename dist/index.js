@@ -69,5 +69,9 @@ class BuyerMenu {
         console.log("slideMenu from Plugin", slideMenu);
         return slideMenu;
     }
+    UserHasRole(LoggedUserRoles, roleName) {
+        roleName = roleName.toLowerCase();
+        return LoggedUserRoles.find(x => x.Name.toLowerCase() == roleName) == roleName ? true : false;
+    }
 }
 exports.BuyerMenu = BuyerMenu;
